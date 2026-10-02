@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>See Through Works: everyday things, seen from the inside</title>
+<meta name="description" content="Look inside the objects you use every day: locks, zippers, kettles, seatbelts, engines. Short answers, see-through pictures, myths to bust and brain teasers to argue about.">
+<meta name="theme-color" content="#0a0f1e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="See Through Works">
+<meta property="og:description" content="Everyday things, seen from the inside.">
+<meta property="og:image" content="https://eriksoto01.github.io/see-through-works/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/quicksand.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Quicksand';font-weight:300 700;font-display:swap;src:url(assets/fonts/quicksand.woff2) format('woff2')}
+:root{--bg:#0a0f1e;--bg2:#0f1730;--panel:#131c38;--line:rgba(255,255,255,.12);--text:#eef2fb;--dim:#9fabca;--gold:#FFC24B;--teal:#6FF5E4;--red:#FF5A4E;
+  --head:Quicksand,ui-rounded,system-ui,sans-serif;--body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--r:22px;--gut:clamp(16px,4vw,40px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 var(--body);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(1100px 700px at 78% -8%,#22305c 0,rgba(34,48,92,0) 62%),radial-gradient(900px 700px at -10% 40%,#17304a 0,rgba(23,48,74,0) 60%),var(--bg)}
+img{display:block;max-width:100%}
+a{color:var(--teal)}
+h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.08;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h1 b,h2 b,h3 b{color:var(--gold);font-weight:700} h3 u{color:var(--teal);text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gut)}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:700 13px/1 var(--head);letter-spacing:.22em;text-transform:uppercase;color:var(--teal);border:2px solid currentColor;border-radius:99px;padding:8px 14px 7px 11px}
+.kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 17px/1 var(--head);color:#111827;background:var(--gold);border:0;border-radius:99px;padding:16px 26px;text-decoration:none;cursor:pointer;transition:transform .15s,box-shadow .15s;box-shadow:0 8px 26px rgba(255,194,75,.22)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,194,75,.32)}
+.btn.ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px var(--line)}
+.btn.ghost:hover{box-shadow:inset 0 0 0 2px var(--teal)}
+.btn.teal{background:var(--teal);box-shadow:0 8px 26px rgba(111,245,228,.2)}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:10px}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(10,15,30,.72);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto;min-width:0}
+.wm{font:700 19px/1 var(--head);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+.wm i{font-style:normal;color:transparent;-webkit-text-stroke:1.1px var(--teal)}
+.wm b{color:var(--gold)}
+.top nav{display:flex;gap:20px}
+.top nav a{font:700 15px/1 var(--head);color:var(--dim);text-decoration:none;padding:8px 0}
+.top nav a:hover{color:var(--text)}
+@media(max-width:820px){.top nav{display:none}.wm{font-size:16px}}
+
+/* hero */
+.hero{position:relative;padding:clamp(28px,6vw,72px) 0 clamp(36px,6vw,80px);overflow:hidden}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,5vw,64px);align-items:center}
+.motif{position:absolute;left:-120px;bottom:-190px;width:560px;height:560px;opacity:.13;pointer-events:none}
+.hero h1{font-size:clamp(40px,6.4vw,82px);margin:20px 0 18px}
+.hero p.lead{font-size:clamp(17px,1.6vw,20px);color:#d5dcf0;max-width:34em;margin:0 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.stats{display:flex;gap:28px;margin-top:30px;color:var(--dim);font:600 14px/1.3 var(--head)}
+.stats b{display:block;font-size:30px;color:var(--text)}
+.stage{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--bg2);box-shadow:0 0 0 1px var(--line),0 30px 80px rgba(0,0,0,.55);touch-action:none;cursor:none;--x:62%;--y:44%;--rad:23%}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;user-select:none;-webkit-user-drag:none}
+.stage .b{clip-path:circle(var(--rad) at var(--x) var(--y))}
+.stage .ring{position:absolute;left:var(--x);top:var(--y);width:calc(var(--rad)*2);aspect-ratio:1;translate:-50% -50%;border-radius:50%;box-shadow:0 0 0 4px var(--teal),0 0 0 9px rgba(10,15,30,.75),0 0 46px rgba(111,245,228,.45);pointer-events:none}
+.stage .ring::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(120% 120% at 28% 20%,rgba(255,255,255,.18) 0,rgba(255,255,255,0) 40%)}
+.stage .hint{position:absolute;left:14px;bottom:14px;font:700 13px/1 var(--head);letter-spacing:.06em;color:var(--text);background:rgba(10,15,30,.72);border:1px solid var(--line);border-radius:99px;padding:9px 13px;pointer-events:none;transition:opacity .4s}
+.stage.used .hint{opacity:0}
+.picks{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.picks button{font:700 14px/1 var(--head);color:var(--dim);background:transparent;border:2px solid var(--line);border-radius:99px;padding:10px 15px;cursor:pointer}
+.picks button[aria-pressed=true]{color:#111827;background:var(--teal);border-color:var(--teal)}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.stagewrap{max-width:520px;width:100%;margin:0 auto}}
+
+/* sections */
+section{padding:clamp(40px,7vw,88px) 0}
+.sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:14px 30px;margin-bottom:clamp(20px,3vw,34px)}
+.sec-head h2{font-size:clamp(30px,4.4vw,52px);margin-top:14px}
+.sec-head p{margin:0;color:var(--dim);max-width:30em}
+
+/* look inside */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:clamp(12px,1.6vw,20px)}
+@media(max-width:520px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.card{position:relative;display:flex;flex-direction:column;width:100%;padding:0;border:0;border-radius:18px;overflow:hidden;background:var(--panel);color:inherit;text-align:left;cursor:pointer;box-shadow:0 0 0 1px var(--line);transition:transform .2s,box-shadow .2s;font:inherit}
+.card:hover,.card:focus-visible{transform:translateY(-4px);box-shadow:0 0 0 2px var(--teal),0 18px 40px rgba(0,0,0,.5)}
+.card .pic{position:relative;display:block;width:100%;aspect-ratio:4/5;background:var(--bg2)}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.card img.b{opacity:0}
+.card:hover img.b,.card:focus-visible img.b,.card.see img.b{opacity:1}
+.card .cap{display:flex;flex-direction:column;flex:1;padding:12px 14px 14px}
+.card .q{font:700 16.5px/1.22 var(--head);text-wrap:balance}
+.card .q b{color:var(--gold)}
+.card .m{display:flex;justify-content:space-between;gap:8px;margin-top:auto;padding-top:10px;font:600 12.5px/1 var(--head);letter-spacing:.04em;color:var(--dim)}
+.card .m span:last-child{color:var(--teal);white-space:nowrap}
+.more{display:flex;justify-content:center;margin-top:26px}
+
+/* viewer */
+dialog{border:0;padding:0;background:transparent;color:var(--text);max-width:none;max-height:none;width:100%;height:100%}
+dialog::backdrop{background:rgba(5,8,16,.88);backdrop-filter:blur(6px)}
+.viewer{position:fixed;inset:0;display:flex;padding:12px;overflow:auto}
+.vbox{display:grid;grid-template-columns:minmax(0,440px) minmax(0,400px);max-width:100%;background:var(--panel);border-radius:var(--r);overflow:hidden;box-shadow:0 0 0 1px var(--line),0 30px 90px rgba(0,0,0,.6);margin:auto}
+.vbox .vpic{position:relative;aspect-ratio:4/5;background:var(--bg2)}
+.vbox .vpic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .5s}
+.vbox .vtxt{display:flex;flex-direction:column;gap:14px;padding:clamp(18px,3vw,30px)}
+.vbox h3{font-size:clamp(22px,2.6vw,30px)}
+.vbox .ans{margin:0;font-size:17.5px;color:#dbe2f4}
+.vbox .tag{font:700 12.5px/1 var(--head);letter-spacing:.18em;text-transform:uppercase;color:var(--teal)}
+.vnav{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:8px}
+.vnav .t{flex:1;text-align:center;font:600 13.5px/1 var(--head);color:var(--dim)}
+.ib{width:44px;height:44px;flex:none;border-radius:50%;border:2px solid var(--line);background:rgba(10,15,30,.7);color:var(--text);font:700 20px/1 var(--head);cursor:pointer}
+.ib:hover{border-color:var(--teal)}
+#vc{position:absolute;right:10px;top:10px;z-index:2}
+@media(max-width:760px){.vbox{grid-template-columns:minmax(0,440px)}.vbox .vpic{aspect-ratio:5/4.6}}
+
+/* myth or fact */
+.myth{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(16px,3vw,36px);align-items:stretch}
+@media(max-width:800px){.myth{grid-template-columns:1fr}}
+.mcard{position:relative;background:linear-gradient(160deg,#1a2650,#121a35);border-radius:var(--r);box-shadow:0 0 0 1px var(--line);padding:clamp(22px,4vw,44px);display:flex;flex-direction:column;gap:22px;min-height:340px;overflow:hidden}
+.mcard .num{font:700 13px/1 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.mcard .say{font:700 clamp(24px,3.2vw,38px)/1.15 var(--head);text-wrap:balance;margin:0}
+.mcard .say.quote::before{content:"\201C";color:var(--gold)} .mcard .say.quote::after{content:"\201D";color:var(--gold)}
+.mbtns{display:flex;flex-wrap:wrap;gap:12px;margin-top:auto}
+.mbtns button{font:700 18px/1 var(--head);border-radius:16px;padding:16px 26px;cursor:pointer;background:transparent;color:var(--text);border:2px solid var(--line);min-width:120px}
+.mbtns button:hover:not(:disabled){border-color:var(--teal)}
+.mbtns button.right{background:var(--teal);border-color:var(--teal);color:#0b1322}
+.mbtns button.wrong{border-color:var(--red);color:var(--red)}
+.mbtns button:disabled{cursor:default}
+.stamp{position:absolute;right:22px;top:20px;font:700 22px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;padding:9px 14px 7px;border:3px solid currentColor;border-radius:10px;rotate:8deg;opacity:0;scale:1.6;transition:opacity .25s,scale .25s}
+.stamp.on{opacity:1;scale:1}
+.stamp.myth{color:var(--red)} .stamp.fact{color:var(--teal)}
+.mside{background:var(--panel);border-radius:var(--r);box-shadow:0 0 0 1px var(--line);padding:clamp(18px,3vw,30px);display:flex;flex-direction:column;gap:16px}
+.mside .why{margin:0;font-size:17.5px;color:#dbe2f4;min-height:6.4em}
+.mside .why b{color:var(--teal)} .mside .why s{color:var(--red);text-decoration:none;font-weight:700}
+.dots{display:flex;gap:7px;flex-wrap:wrap}
+.dots i{width:22px;height:8px;border-radius:99px;background:var(--line)}
+.dots i.ok{background:var(--teal)} .dots i.no{background:var(--red)} .dots i.cur{outline:2px solid var(--gold);outline-offset:2px}
+.score{font:700 15px/1.3 var(--head);color:var(--dim);margin-top:auto}
+.score b{color:var(--gold);font-size:26px}
+
+/* teasers */
+.teasers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,2vw,24px)}
+@media(max-width:800px){.teasers{grid-template-columns:1fr}}
+.teaser{background:var(--panel);border-radius:var(--r);box-shadow:0 0 0 1px var(--line);padding:clamp(16px,2.4vw,26px);display:flex;flex-direction:column;gap:14px}
+.teaser h3{font-size:clamp(20px,2.3vw,26px)}
+.teaser svg{width:100%;height:auto;max-height:340px;font-family:var(--head)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts button{font:700 15px/1 var(--head);color:var(--text);background:transparent;border:2px solid rgba(111,245,228,.6);border-radius:14px;padding:12px 16px;cursor:pointer}
+.opts button:hover{background:rgba(111,245,228,.1)}
+.opts button.yes{background:var(--teal);border-color:var(--teal);color:#0b1322}
+.opts button.no{border-color:var(--red);color:var(--red)}
+.teaser .why{margin:0;color:#d5dcf0;min-height:3.2em}
+.teaser .why b{color:var(--teal)}
+@keyframes strain{0%,100%{translate:0 0}25%{translate:-3px 1px}50%{translate:2px -2px}75%{translate:3px 2px}}
+.teaser svg.locked{animation:strain .28s linear 6}
+
+/* facts strip */
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px var(--gut) 18px;margin:0 calc(var(--gut)*-1);scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.strip img{flex:none;width:min(74vw,330px);height:auto;aspect-ratio:4/5;border-radius:18px;scroll-snap-align:center;box-shadow:0 0 0 1px var(--line)}
+
+/* about */
+.about{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,24px)}
+@media(max-width:800px){.about{grid-template-columns:1fr}}
+.about div{background:var(--panel);border-radius:var(--r);box-shadow:0 0 0 1px var(--line);padding:24px}
+.about h3{font-size:22px;margin-bottom:8px}
+.about p{margin:0;color:#d0d8ee}
+.follow{margin-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;background:linear-gradient(120deg,#1a2650,#152243);border-radius:var(--r);box-shadow:0 0 0 1px var(--line);padding:22px 24px}
+.follow p{margin:0;flex:1;min-width:240px;font:700 20px/1.3 var(--head)}
+footer{border-top:1px solid var(--line);padding:30px 0 46px;color:var(--dim);font-size:14.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justify-content:space-between}
+[hidden]{display:none!important}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="See Through Works, home"><img src="assets/mark.svg" width="34" height="34" alt=""><span class="wm"><i>See Through</i> <b>Works</b></span></a>
+  <nav aria-label="Sections"><a href="#inside">Look inside</a><a href="#myth">Myth or fact</a><a href="#teasers">Brain teasers</a><a href="#facts">Did you know</a><a href="#about">About</a></nav>
+  <a class="btn" id="follow" href="#" hidden style="padding:11px 18px;font-size:15px">Follow</a>
+</div></header>
+
+<main id="top">
+<div class="hero">
+  <svg class="motif" id="motif" viewBox="0 0 560 560" aria-hidden="true"></svg>
+  <div class="wrap">
+  <div>
+    <span class="kicker">Seen from the inside</span>
+    <h1>See how everyday things <b>really work.</b></h1>
+    <p class="lead">We open up the objects you use every day: locks, zippers, kettles, seatbelts, engines. One question, one hidden part, one moment where it clicks.</p>
+    <div class="cta"><a class="btn" href="#inside">Look inside</a><a class="btn ghost" href="#myth">Myth or fact?</a></div>
+    <div class="stats"><div><b id="n">35</b>things opened up</div><div><b>2</b>sentences each</div><div><b>0</b>jargon</div></div>
+  </div>
+  <div class="stagewrap">
+    <div class="stage" id="stage" role="img" aria-label="An everyday object with a round lens that shows the mechanism inside it">
+      <img class="a" alt="" draggable="false"><img class="b" alt="" draggable="false"><div class="ring"></div><span class="hint">Move the lens to look inside</span>
+    </div>
+    <div class="picks" id="picks" role="group" aria-label="Choose an object"></div>
+  </div>
+</div></div>
+
+<section id="inside"><div class="wrap">
+  <div class="sec-head"><div><span class="kicker" style="color:var(--gold)">Look inside</span><h2>Pick a question. <b>See the answer.</b></h2></div><p>Hover or scroll past a card to see through it. Tap for the answer in two sentences.</p></div>
+  <div class="grid" id="grid"></div>
+  <div class="more"><button class="btn ghost" id="more" hidden>Show all of them</button></div>
+</div></section>
+
+<section id="myth"><div class="wrap">
+  <div class="sec-head"><div><span class="kicker" style="color:var(--red)">Myth or fact?</span><h2>Ten things people say. <b>Which are true?</b></h2></div><p>Trust your gut, then see what is really going on inside.</p></div>
+  <div class="myth">
+    <div class="mcard"><span class="num" id="mnum"></span><span class="stamp" id="mstamp"></span><p class="say quote" id="msay"></p>
+      <div class="mbtns"><button id="bm" type="button">Myth</button><button id="bf" type="button">Fact</button></div></div>
+    <div class="mside"><div class="dots" id="mdots" aria-hidden="true"></div><p class="why" id="mwhy" aria-live="polite">Pick one. The answer shows up here.</p>
+      <button class="btn teal" id="mnext" type="button" hidden>Next one</button><div class="score" id="mscore"></div></div>
+  </div>
+</div></section>
+
+<section id="teasers"><div class="wrap">
+  <div class="sec-head"><div><span class="kicker">Brain teasers</span><h2>Six quick ones. <b>No tricks, only mechanics.</b></h2></div><p>Pick an answer before you peek. Get a gear question right and the gears show you.</p></div>
+  <div class="teasers" id="tz"></div>
+</div></section>
+
+<section id="facts"><div class="wrap">
+  <div class="sec-head"><div><span class="kicker" style="color:var(--gold)">Did you know</span><h2>Hidden details, <b>in plain sight.</b></h2></div><p>Small things you have looked at a thousand times without being told what they are for. Slide sideways for more.</p></div>
+  <div class="strip" id="strip" tabindex="0" aria-label="Fact cards, scroll sideways"></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="sec-head"><div><span class="kicker">About</span><h2>We like the moment a mystery <b>turns into a mechanism.</b></h2></div></div>
+  <div class="about">
+    <div><h3>Start with the question</h3><p>Everything here answers something you have half wondered about: why only your key fits, how a seatbelt knows, what actually snaps inside a glow stick.</p></div>
+    <div><h3>Show the real thing</h3><p>We build each object in 3D from how it truly works: what pushes what, in which direction, and what stops it. If a picture bends reality to make a part visible, we say so.</p></div>
+    <div><h3>Keep it short</h3><p>No jargon, and a last line you can repeat to someone else. If you can explain it at dinner tonight, we did our job.</p></div>
+  </div>
+  <div class="follow" id="followbox" hidden><p>New explainers and brain teasers every week on our Facebook Page.</p><a class="btn" id="follow2" href="#" target="_blank" rel="noopener">Follow See Through Works</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>&copy; 2026 See Through Works. Everyday things, seen from the inside.</span><span>No cookies, no tracking. Nothing you do here leaves your browser.</span></div></footer>
+
+<dialog id="dlg" aria-label="Look inside"><div class="viewer"><div class="vbox">
+  <div class="vpic"><button class="ib" id="vc" aria-label="Close">&times;</button><img id="va" alt=""><img id="vb" alt=""></div>
+  <div class="vtxt"><span class="tag" id="vtag"></span><h3 id="vq"></h3><p class="ans" id="vans"></p>
+    <div class="vnav"><button class="ib" id="vp" aria-label="Previous">&#8249;</button><span class="t" id="vm"></span><button class="ib" id="vn" aria-label="Next">&#8250;</button></div></div>
+</div></div></dialog>
+
+<script src="assets/teasers.js"></script>
+<script>
+/* Things you may want to edit ------------------------------------------------------------------------------------ */
+const SITE = {
+  facebook: '',            // the Page's address, e.g. 'https://www.facebook.com/seethroughworks'. Empty hides the Follow buttons.
+  firstRows: 12,           // how many cards show before "Show all"
+};
+/* The catalogue is written here by tools/build.js. Do not edit by hand. */
+const DATA = /*DATA*/{"shorts":[{"slug":"lock","order":1,"name":"Pin tumbler lock","q":"Why does only *your key* open your lock?","a":"Five pins are cut in two and block the cylinder. Only your key lifts every cut to the same line, so nothing is in the way and it turns."},{"slug":"jack","order":2,"name":"Hydraulic jack","q":"How can one hand *lift a car*?","a":"A small piston pushes oil under a much bigger one. The same pressure on ten times the area gives ten times the force, and a valve stops the oil flowing back."},{"slug":"speaker","order":3,"name":"Speaker","q":"How does a magnet *make music*?","a":"Current turns a coil of wire into a magnet, and the fixed magnet around it pushes and pulls it thousands of times a second. The cone moves the air. That is sound."},{"slug":"seatbelt","order":4,"name":"Seatbelt retractor","q":"Why does your seatbelt only lock when you *yank it*?","a":"Pull slowly and the spool turns freely. Yank it, or stop the car hard, and a small weight moves and drops a catch into a ring of teeth."},{"slug":"door","order":5,"name":"Door latch","q":"How does a door *latch shut* without touching the handle?","a":"The latch bolt has one slanted side. The strike plate pushes on the slant, the bolt slides in, and a spring snaps it back out once it reaches the hole."},{"slug":"windows","order":6,"name":"Airplane windows","q":"Why are airplane windows *round*?","a":"Stress in the cabin's skin flows around each window. At a sharp corner it piles up and a crack can start, so every window, door and hatch is rounded."},{"slug":"bike","order":7,"name":"Bike freehub","q":"Why does your bike *click* when you stop pedaling?","a":"Spring-loaded pawls in the hub bite into slanted teeth when you pedal. When you coast, the teeth slide past and each pawl snaps back down. That is the click."},{"slug":"elevator","order":8,"name":"Elevator safety brake","q":"What happens if an elevator's *cables snap*?","a":"A governor wheel senses the speed. Too fast, and it trips steel wedges that clamp the guide rails. The harder the car pulls, the harder they grip."},{"slug":"combo","order":9,"name":"Combination padlock","q":"How does a padlock *remember* its combination?","a":"Behind the dial sit three wheels, each with one notch. Every number parks one notch at the top. When all three line up, a bar drops in and frees the shackle."},{"slug":"clock","order":10,"name":"Clock escapement","q":"What makes a clock *tick*?","a":"An anchor holds the gears back and lets them slip one tooth for each swing of the pendulum. Every catch is a tick, and every slip gives the pendulum a tiny push."},{"slug":"zipper","order":11,"name":"Zipper","q":"How do two rows of teeth *lock together*?","a":"Each tooth has a bump on top and a hollow underneath. The slider is a wedge that feeds the two rows together at an angle, so every bump drops into the next hollow."},{"slug":"pen","order":12,"name":"Click pen","q":"Why does one click push a pen *out*, and the next pull it *back*?","a":"Each click pushes a toothed cam past ribs in the barrel and turns it one notch. It rests on a high ledge one time (tip out) and drops into a deep slot the next (tip in)."},{"slug":"kettle","order":13,"name":"Kettle switch","q":"How does a kettle know when to *switch off*?","a":"Steam reaches a small disc made of two metals. One stretches more with heat, so the disc snaps inside out and flicks the switch off."},{"slug":"sprinkler","order":14,"name":"Fire sprinkler","q":"What *sets off* a fire sprinkler?","a":"A glass bulb of liquid holds a plug against the water. Heat makes the liquid expand until the glass shatters. Only the sprinklers above the fire open."},{"slug":"tape","order":15,"name":"Tape measure hook","q":"Why is the hook on a tape measure *loose*?","a":"The hook slides by exactly its own thickness. Hooked over an edge, zero is its inside face. Pushed against a wall, zero is its outside face."},{"slug":"musicbox","order":16,"name":"Music box","q":"How does a music box *play a song*?","a":"Pins on a turning cylinder pluck the teeth of a steel comb. Long teeth ring low, short teeth ring high. The song is written in pins."},{"slug":"switch","order":17,"name":"Light switch","q":"Why does a light switch *snap*?","a":"You squeeze a spring until the lever passes its centre. Then the spring flips the contacts together in a blink, too fast for a spark to burn them."},{"slug":"escalator","order":18,"name":"Escalator steps","q":"Why do escalator steps *go flat* at the top?","a":"Each step rides on two pairs of wheels on two tracks. On the slope the tracks keep every step level. At the landing they come together and the steps form a flat floor."},{"slug":"valve","order":19,"name":"Tire valve","q":"Why doesn't air *leak out* of your tire valve?","a":"A spring holds a rubber seal on its seat, and the air in the tyre pushes it the same way. More pressure means a tighter seal. Pressing the pin lifts it."},{"slug":"stapler","order":20,"name":"Stapler","q":"How does a staple *fold itself*?","a":"A blade pushes one staple through the paper onto a plate with two curved grooves. The staple never folds itself. The grooves fold it."},{"slug":"pencil","order":21,"name":"Mechanical pencil","q":"How does a pencil feed its lead *one click* at a time?","a":"Three jaws grip the lead. A click slides jaws and lead forward together, a stop opens the jaws, and they slide back alone to grab the lead further up."},{"slug":"can","order":22,"name":"Can tab","q":"How does a tiny tab open a *pressurized* can?","a":"First the tab pivots on its nose and cracks a vent to let the gas out. Then the rivet becomes the pivot and the nose pushes the lid in. One tab, two levers."},{"slug":"nozzle","order":23,"name":"Gas pump nozzle","q":"How does a gas pump know your tank is *full*?","a":"Fuel rushing through the handle sucks air in through a small hole at the tip. When the fuel covers the hole, the suction jumps and unlatches the trigger."},{"slug":"trainwheels","order":24,"name":"Train wheels","q":"How does a train *steer* around a curve?","a":"Each wheel is a cone on a solid axle. In a curve the pair shifts outward, so the outer wheel rolls on its wide part and travels farther. The train steers itself."},{"slug":"lighter","order":25,"name":"Lighter","q":"Where does a lighter's *spark* come from?","a":"A spring presses a soft metal rod against a steel wheel. Spinning the wheel shaves off specks that burn white hot, just as a lever opens the gas."},{"slug":"ballpoint","order":26,"name":"Ballpoint pen tip","q":"Why does a pen *stop working* when you drop it?","a":"A tiny ball sits in a socket and rolls ink from behind onto the page. Land the pen on its tip and the socket dents. The ball jams, so no ink."},{"slug":"coincheck","order":27,"name":"Vending machine coin check","q":"How does a vending machine catch a *fake coin*?","a":"A gauge checks the size and a magnet holds steel slugs. The same magnet slows real coins by an amount that depends on the metal, and only the right speed reaches the cash box."},{"slug":"sawbrake","order":28,"name":"Skin-sensing saw brake","q":"How does a saw know it touched a *finger*?","a":"The blade carries a small electric signal that skin changes and wood does not. Within a few thousandths of a second a spring fires a metal block into the teeth."},{"slug":"sewing","order":29,"name":"Sewing machine","q":"How does a sewing machine tie a stitch from *one side*?","a":"The needle's eye is at its tip, so it pushes a loop of thread under the cloth. A hook carries that loop around a second spool below, and the two threads lock."},{"slug":"points","order":30,"name":"Railway switch","q":"How does a train *change tracks*?","a":"Two tapered blades, tied together, slide sideways. One closes against its rail and guides the wheel by its flange. The other opens a gap for the opposite wheel."},{"slug":"teapot","order":31,"name":"Two-chamber teapot","q":"How does one teapot pour *two different drinks*?","a":"A wall splits the pot in two, and each side has its own air hole. Liquid can only leave if air gets in behind it, so plugging a hole holds that drink back."},{"slug":"glowstick","order":32,"name":"Glow stick","q":"What *snaps* when you crack a glow stick?","a":"A thin glass vial inside the tube. When it breaks, two liquids mix and react. The reaction hands its energy to a dye, and the dye gives it back as light."},{"slug":"starter","order":33,"name":"Starter motor","q":"What happens when you *turn the key*?","a":"An electromagnet pulls a lever that slides a small gear into the teeth of the flywheel. Only then does the motor get full power. Let go, and a spring pulls the gear back."},{"slug":"greedycup","order":34,"name":"Self-emptying cup","q":"Why does this cup *empty itself* if you overfill it?","a":"The centre column hides a bent tube. Fill past the bend and the tube becomes a siphon that drains the whole cup through the base."},{"slug":"engine","order":35,"name":"Four-stroke engine","q":"What happens *inside an engine*?","a":"Four strokes, over and over. The piston sucks in air and fuel, squeezes them, a spark sets them off and the blast drives it down, then it pushes the exhaust out."}],"lens":[{"slug":"lock","label":"Door lock"},{"slug":"combo","label":"Combination lock"},{"slug":"kettle","label":"Kettle"},{"slug":"stapler","label":"Stapler"}]}/*END*/;
+
+const $ = s => document.querySelector(s), md = s => s.replace(/\*(.+?)\*/g, '<b>$1</b>').replace(/_(.+?)_/g, '<u>$1</u>');
+const CALM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+$('#n').textContent = DATA.shorts.length || 35;
+if (SITE.facebook) { for (const id of ['#follow', '#follow2']) $(id).href = SITE.facebook; $('#follow').hidden = false; $('#follow').target = '_blank'; $('#follow').rel = 'noopener'; $('#followbox').hidden = false; }
+
+/* turning gears: every <g class="gear"> in a drawing is turned about its own centre, each the opposite way to the one before,
+   at a speed set by its tooth count, so a meshing chain stays in mesh */
+const spinners = new Set();
+function turn(svg, angle) { let n0 = 0; svg.querySelectorAll('g.gear').forEach((g, i) => { const n = +g.dataset.n; n0 = n0 || n;
+  g.setAttribute('transform', `rotate(${((i % 2 ? -1 : 1) * angle * n0 / n).toFixed(2)} ${g.dataset.cx} ${g.dataset.cy})`); }); }
+function spin(svg, speed, seconds) { const s = { svg, speed, a: 0, left: seconds }; spinners.add(s); return s; }
+let last = performance.now();
+requestAnimationFrame(function loop(now) { const dt = Math.min(0.05, (now - last) / 1000); last = now;
+  for (const s of spinners) { s.a += s.speed * dt; turn(s.svg, s.a); if (s.left !== undefined && (s.left -= dt) <= 0) spinners.delete(s); }
+  requestAnimationFrame(loop); });
+
+/* hero: the slow gears behind the headline, and the lens ----------------------------------------------------------- */
+(() => {
+  if (typeof gear === 'function') { const m = $('#motif'), ph = 0.2, d = 170 + 94.4, a = -0.9;
+    m.innerHTML = gear(210, 330, 18, 170, ph, { color: 'none', stroke: '#FFC24B' }) + gear(210 + d * Math.cos(a), 330 + d * Math.sin(a), 10, 94.4, meshPhase(ph, 170, 10, 94.4, a), { color: 'none', stroke: '#6FF5E4' });
+    if (!CALM) spin(m, 9); }
+  const st = $('#stage'), a = st.querySelector('.a'), b = st.querySelector('.b'), picks = $('#picks'); let used = false, t0 = performance.now();
+  const set = slug => { a.src = `assets/lens/${slug}-a.jpg`; b.src = `assets/lens/${slug}-b.jpg`; [...picks.children].forEach(c => c.setAttribute('aria-pressed', c.dataset.s === slug)); };
+  DATA.lens.forEach((l, i) => { const c = document.createElement('button'); c.textContent = l.label; c.dataset.s = l.slug; c.onclick = () => set(l.slug); picks.append(c); new Image().src = `assets/lens/${l.slug}-b.jpg`; if (!i) set(l.slug); });
+  const put = (x, y) => { st.style.setProperty('--x', Math.max(0, Math.min(100, x)) + '%'); st.style.setProperty('--y', Math.max(0, Math.min(100, y)) + '%'); };
+  const touched = () => { used = true; t0 = performance.now(); st.classList.add('used'); };
+  const move = e => { const r = st.getBoundingClientRect(); put((e.clientX - r.left) / r.width * 100, (e.clientY - r.top) / r.height * 100); touched(); };
+  st.addEventListener('pointermove', move); st.addEventListener('pointerdown', e => { st.setPointerCapture(e.pointerId); move(e); });
+  st.tabIndex = 0;                                                       // keyboard: arrow keys move the lens
+  st.addEventListener('keydown', e => { const d = { ArrowLeft: [-4, 0], ArrowRight: [4, 0], ArrowUp: [0, -4], ArrowDown: [0, 4] }[e.key]; if (!d) return; e.preventDefault();
+    const g = k => parseFloat(getComputedStyle(st).getPropertyValue(k)); put(g('--x') + d[0], g('--y') + d[1]); touched(); });
+  const drift = now => { if (!CALM && (!used || now - t0 > 3500)) { const t = now / 1000; put(50 + 26 * Math.sin(t * 0.55), 46 + 22 * Math.sin(t * 0.83 + 1)); } requestAnimationFrame(drift); };
+  requestAnimationFrame(drift);
+})();
+
+/* look inside: cards and the answer viewer -------------------------------------------------------------------------- */
+(() => {
+  const grid = $('#grid'), dlg = $('#dlg'), more = $('#more'); let cur = 0;
+  DATA.shorts.forEach((s, i) => { const c = document.createElement('button'); c.className = 'card'; c.hidden = i >= SITE.firstRows;
+    c.innerHTML = `<span class="pic"><img class="a" src="assets/posters/${s.slug}-a.jpg" alt="" loading="lazy" width="540" height="675"><img class="b" src="assets/posters/${s.slug}-b.jpg" alt="" loading="lazy" width="720" height="900"></span><span class="cap"><span class="q">${md(s.q)}</span><span class="m"><span>${s.name}</span><span>Answer &rsaquo;</span></span></span>`;
+    c.setAttribute('aria-label', s.q.replace(/\*/g, '') + ' See the answer.'); c.onclick = () => openAt(i); grid.append(c); });
+  if (DATA.shorts.length > SITE.firstRows) { more.hidden = false; more.textContent = `Show all ${DATA.shorts.length}`; more.onclick = () => { [...grid.children].forEach(c => c.hidden = false); more.hidden = true; }; }
+  if (matchMedia('(hover: none)').matches && 'IntersectionObserver' in window) {     // phones: a card shows its inside as it crosses the middle of the screen
+    const io = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('see', e.isIntersecting)), { rootMargin: '-38% 0px -38% 0px' });
+    [...grid.children].forEach(c => io.observe(c)); }
+  function openAt(i) { cur = (i + DATA.shorts.length) % DATA.shorts.length; const s = DATA.shorts[cur], va = $('#va'), vb = $('#vb');
+    va.src = `assets/posters/${s.slug}-a.jpg`; vb.style.transition = 'none'; vb.style.opacity = 0; vb.src = `assets/posters/${s.slug}-b.jpg`; vb.alt = 'Inside view: ' + s.name;
+    setTimeout(() => { vb.style.transition = ''; vb.style.opacity = 1; }, 350);      // the solid picture gives way to the inside
+    $('#vtag').textContent = s.name; $('#vq').innerHTML = md(s.q); $('#vans').textContent = s.a; $('#vm').textContent = `${cur + 1} of ${DATA.shorts.length}`;
+    if (!dlg.open) dlg.showModal(); }
+  $('#vc').onclick = () => dlg.close(); $('#vp').onclick = () => openAt(cur - 1); $('#vn').onclick = () => openAt(cur + 1);
+  dlg.addEventListener('click', e => { if (e.target.classList.contains('viewer')) dlg.close(); });
+  dlg.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') openAt(cur - 1); if (e.key === 'ArrowRight') openAt(cur + 1); });
+})();
+
+/* myth or fact ------------------------------------------------------------------------------------------------------ */
+(() => {
+  const M = [
+    ['If an elevator\'s cables snap, the car falls.', false, 'Wedges under the car clamp onto the guide rails the moment it moves too fast. The harder it pulls, the harder they grip.'],
+    ['A plane\'s black box is bright orange.', true, 'Flight recorders are painted orange, with reflective stripes, so they are easier to find.'],
+    ['The coloured square on a toothpaste tube tells you what is inside.', false, 'It is a printed mark that tells the factory machine where to cut and seal the tube. It says nothing about ingredients.'],
+    ['The little arrow on a fuel gauge points to the side of the fuel cap.', true, 'It sits next to the pump symbol and points to the side of the car you fill up on.'],
+    ['When there is a fire, every sprinkler in the room goes off.', false, 'Each sprinkler has its own glass bulb that bursts only when the air around it gets hot enough. Usually just one or two open.'],
+    ['A tape measure\'s wobbly hook means it is worn out.', false, 'It is loose on purpose. It slides by exactly its own thickness, so hooking on and pushing against both measure true.'],
+    ['You can see into a microwave because the holes in the door are smaller than the waves.', true, 'Light waves are tiny and pass through the metal mesh. The microwaves are about 12 cm long and cannot.'],
+    ['The flint in a lighter is a piece of flint.', false, 'It is a soft man-made metal alloy. The steel wheel shaves off specks that catch fire in the air.'],
+    ['The bumps on F and J help you find the keys without looking.', true, 'They mark where your index fingers rest. Every other key is reached from there.'],
+    ['The QWERTY layout was designed to slow typists down.', false, 'It grew out of trial and error on early typewriters in the 1870s. Slowing people down was never the aim.'],
+  ];
+  let i = 0, score = 0, done = [], over = false;
+  const dots = $('#mdots'), bm = $('#bm'), bf = $('#bf'), stamp = $('#mstamp'), next = $('#mnext'), say = $('#msay');
+  const tally = () => { $('#mscore').innerHTML = done.length ? `<b>${score}</b> right out of ${done.length}` : ''; };
+  function show() { over = false; $('#mnum').textContent = `Number ${i + 1} of ${M.length}`; say.textContent = M[i][0]; say.classList.add('quote'); stamp.className = 'stamp'; stamp.textContent = '';
+    for (const b of [bm, bf]) { b.disabled = false; b.className = ''; b.hidden = false; } next.hidden = true; $('#mwhy').textContent = 'Pick one. The answer shows up here.';
+    dots.innerHTML = M.map((_, k) => `<i class="${k < done.length ? (done[k] ? 'ok' : 'no') : ''}${k === i ? ' cur' : ''}"></i>`).join(''); tally(); }
+  function pick(saidFact) { const [, fact, why] = M[i], ok = saidFact === fact; done.push(ok); score += ok ? 1 : 0;
+    for (const b of [bm, bf]) b.disabled = true; (saidFact ? bf : bm).classList.add(ok ? 'right' : 'wrong'); (fact ? bf : bm).classList.add('right');
+    stamp.textContent = fact ? 'Fact' : 'Myth'; stamp.className = 'stamp on ' + (fact ? 'fact' : 'myth');
+    $('#mwhy').innerHTML = (ok ? '<b>You got it.</b> ' : '<s>Not this time.</s> ') + why; tally();
+    dots.children[i].className = (ok ? 'ok' : 'no') + ' cur'; next.hidden = false; next.textContent = i === M.length - 1 ? 'See my score' : 'Next one'; }
+  bm.onclick = () => pick(false); bf.onclick = () => pick(true);
+  next.onclick = () => {
+    if (over) { i = 0; score = 0; done = []; show(); return; }
+    if (i < M.length - 1) { i++; show(); return; }
+    over = true; $('#mnum').textContent = 'Your score'; say.textContent = `${score} out of ${M.length}`; say.classList.remove('quote'); stamp.className = 'stamp'; bm.hidden = bf.hidden = true;
+    $('#mwhy').textContent = score === M.length ? 'A perfect round. You clearly look inside things.' : score >= 7 ? 'Sharp. A few of these fool almost everyone.' : 'These fool most people. Now you know what is really inside.';
+    next.textContent = 'Play again'; };
+  show();
+})();
+
+/* brain teasers ---------------------------------------------------------------------------------------------------- */
+(() => {
+  const T = [
+    { art: 'gearChain', q: 'Gear A turns *clockwise*. Which way does _E_ turn?', o: ['Clockwise', 'Counter-clockwise', "It can't turn"], a: 0, why: 'Every pair of touching gears turns in opposite directions, so A, C and E all go the same way.', spin: 40 },
+    { art: 'tanks', q: 'Water runs into tank 1. Which tank *fills up first*?', o: ['1', '2', '3', '4', '5'], a: 4, why: 'Tank 1 drains from the bottom, 2 only fills to its upper outlet, the pipe to 3 ends at a closed lid, and 4 drains straight into 5.' },
+    { art: 'gearSpeed', q: 'A turns once. *Which gear* spins fastest?', o: ['Gear A', 'Gear B', 'Gear C'], a: 2, why: 'C has a quarter of A\'s teeth, so it turns four times for each turn of A.', spin: 30 },
+    { art: 'pulleys', q: 'Same weight. *Which rope* is easier to pull?', o: ['Rope A', 'Rope B', 'No difference'], a: 1, why: 'In B the moving pulley shares the load between two strands: half the force, but twice as much rope to pull.' },
+    { art: 'gearTriangle', q: 'A turns clockwise. Which way does _C_ turn?', o: ['Clockwise', 'Counter-clockwise', "It can't turn"], a: 2, why: 'A pushes C one way while B pushes it the other. Three gears in a ring lock solid.', lock: true },
+    { art: 'seesaw', q: 'Three blocks against two. *Which side* goes down?', o: ['Side A', 'Side B', 'Neither'], a: 2, why: 'Turning force is weight times distance: 3 blocks x 2 equals 2 blocks x 3, so it balances.' },
+  ];
+  const box = $('#tz'); if (typeof ART === 'undefined') return;
+  T.forEach(t => { const d = document.createElement('div'); d.className = 'teaser';
+    d.innerHTML = `<h3>${md(t.q)}</h3><svg viewBox="0 0 1080 820" role="img" aria-label="Diagram for the question">${ART[t.art]()}</svg><div class="opts">${t.o.map((o, i) => `<button data-i="${i}">${o}</button>`).join('')}</div><p class="why" aria-live="polite"></p>`;
+    box.append(d); const svg = d.querySelector('svg'), bb = svg.getBBox(); svg.setAttribute('viewBox', `${bb.x - 20} ${bb.y - 20} ${bb.width + 40} ${bb.height + 40}`);
+    d.querySelectorAll('.opts button').forEach(b => b.onclick = () => { const ok = +b.dataset.i === t.a; d.querySelectorAll('.opts button').forEach(x => x.classList.remove('yes', 'no')); b.classList.add(ok ? 'yes' : 'no');
+      d.querySelector('.why').innerHTML = ok ? `<b>Yes.</b> ${t.why}` : 'Not quite. Look again, or try another answer.';
+      if (ok && !CALM) { if (t.spin && ![...spinners].some(s => s.svg === svg)) spin(svg, t.spin, 9); if (t.lock) { svg.classList.remove('locked'); void svg.getBBox(); svg.classList.add('locked'); } } }); });
+})();
+
+/* fact cards -------------------------------------------------------------------------------------------------------- */
+(() => { const F = [['04-tape-hook', "A tape measure's hook is loose on purpose. It slides by exactly its own thickness."], ['30-fuel-arrow', 'The little arrow on a fuel gauge points to the side of the car where the fuel cap is.'], ['06-sprinkler', "Fire sprinklers don't all go off together. Each one has its own glass bulb."], ['31-fj-bumps', 'The bumps on F and J let your index fingers find home without looking.'], ['12-can-tab', 'A can tab is two levers in one: first it vents the pressure, then it pushes the lid in.'], ['33-microwave-mesh', 'The holes in a microwave door are far smaller than the waves, so light gets out and microwaves do not.'], ['01-elevator', 'If an elevator drops too fast, wedges clamp onto its guide rails and hold it.'], ['34-black-box', "A plane's black box is bright orange, so it is easier to find."], ['09-lighter', "A lighter's flint isn't flint. It is a soft metal alloy that sparks when scraped."], ['32-tape-slot', "The slot in a tape measure's hook grabs a nail or screw head."], ['22-kettle', "A kettle's click is a metal disc snapping inside out."], ['27-train-wheels', 'Train wheels are cones, and that is how a train steers through a curve.']];
+  $('#strip').innerHTML = F.map(([f, alt]) => `<img src="assets/facts/${f}.jpg" alt="${alt}" loading="lazy" width="720" height="900">`).join(''); })();
+</script>
+</body>
+</html>

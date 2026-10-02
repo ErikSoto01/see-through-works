@@ -1,0 +1,267 @@
+{
+ "shorts": [
+  {
+   "slug": "lock",
+   "order": 1,
+   "name": "Pin tumbler lock",
+   "q": "Why does only *your key* open your lock?",
+   "a": "Five pins are cut in two and block the cylinder. Only your key lifts every cut to the same line, so nothing is in the way and it turns."
+  },
+  {
+   "slug": "jack",
+   "order": 2,
+   "name": "Hydraulic jack",
+   "q": "How can one hand *lift a car*?",
+   "a": "A small piston pushes oil under a much bigger one. The same pressure on ten times the area gives ten times the force, and a valve stops the oil flowing back."
+  },
+  {
+   "slug": "speaker",
+   "order": 3,
+   "name": "Speaker",
+   "q": "How does a magnet *make music*?",
+   "a": "Current turns a coil of wire into a magnet, and the fixed magnet around it pushes and pulls it thousands of times a second. The cone moves the air. That is sound."
+  },
+  {
+   "slug": "seatbelt",
+   "order": 4,
+   "name": "Seatbelt retractor",
+   "q": "Why does your seatbelt only lock when you *yank it*?",
+   "a": "Pull slowly and the spool turns freely. Yank it, or stop the car hard, and a small weight moves and drops a catch into a ring of teeth."
+  },
+  {
+   "slug": "door",
+   "order": 5,
+   "name": "Door latch",
+   "q": "How does a door *latch shut* without touching the handle?",
+   "a": "The latch bolt has one slanted side. The strike plate pushes on the slant, the bolt slides in, and a spring snaps it back out once it reaches the hole."
+  },
+  {
+   "slug": "windows",
+   "order": 6,
+   "name": "Airplane windows",
+   "q": "Why are airplane windows *round*?",
+   "a": "Stress in the cabin's skin flows around each window. At a sharp corner it piles up and a crack can start, so every window, door and hatch is rounded."
+  },
+  {
+   "slug": "bike",
+   "order": 7,
+   "name": "Bike freehub",
+   "q": "Why does your bike *click* when you stop pedaling?",
+   "a": "Spring-loaded pawls in the hub bite into slanted teeth when you pedal. When you coast, the teeth slide past and each pawl snaps back down. That is the click."
+  },
+  {
+   "slug": "elevator",
+   "order": 8,
+   "name": "Elevator safety brake",
+   "q": "What happens if an elevator's *cables snap*?",
+   "a": "A governor wheel senses the speed. Too fast, and it trips steel wedges that clamp the guide rails. The harder the car pulls, the harder they grip."
+  },
+  {
+   "slug": "combo",
+   "order": 9,
+   "name": "Combination padlock",
+   "q": "How does a padlock *remember* its combination?",
+   "a": "Behind the dial sit three wheels, each with one notch. Every number parks one notch at the top. When all three line up, a bar drops in and frees the shackle."
+  },
+  {
+   "slug": "clock",
+   "order": 10,
+   "name": "Clock escapement",
+   "q": "What makes a clock *tick*?",
+   "a": "An anchor holds the gears back and lets them slip one tooth for each swing of the pendulum. Every catch is a tick, and every slip gives the pendulum a tiny push."
+  },
+  {
+   "slug": "zipper",
+   "order": 11,
+   "name": "Zipper",
+   "q": "How do two rows of teeth *lock together*?",
+   "a": "Each tooth has a bump on top and a hollow underneath. The slider is a wedge that feeds the two rows together at an angle, so every bump drops into the next hollow."
+  },
+  {
+   "slug": "pen",
+   "order": 12,
+   "name": "Click pen",
+   "q": "Why does one click push a pen *out*, and the next pull it *back*?",
+   "a": "Each click pushes a toothed cam past ribs in the barrel and turns it one notch. It rests on a high ledge one time (tip out) and drops into a deep slot the next (tip in)."
+  },
+  {
+   "slug": "kettle",
+   "order": 13,
+   "name": "Kettle switch",
+   "q": "How does a kettle know when to *switch off*?",
+   "a": "Steam reaches a small disc made of two metals. One stretches more with heat, so the disc snaps inside out and flicks the switch off."
+  },
+  {
+   "slug": "sprinkler",
+   "order": 14,
+   "name": "Fire sprinkler",
+   "q": "What *sets off* a fire sprinkler?",
+   "a": "A glass bulb of liquid holds a plug against the water. Heat makes the liquid expand until the glass shatters. Only the sprinklers above the fire open."
+  },
+  {
+   "slug": "tape",
+   "order": 15,
+   "name": "Tape measure hook",
+   "q": "Why is the hook on a tape measure *loose*?",
+   "a": "The hook slides by exactly its own thickness. Hooked over an edge, zero is its inside face. Pushed against a wall, zero is its outside face."
+  },
+  {
+   "slug": "musicbox",
+   "order": 16,
+   "name": "Music box",
+   "q": "How does a music box *play a song*?",
+   "a": "Pins on a turning cylinder pluck the teeth of a steel comb. Long teeth ring low, short teeth ring high. The song is written in pins."
+  },
+  {
+   "slug": "switch",
+   "order": 17,
+   "name": "Light switch",
+   "q": "Why does a light switch *snap*?",
+   "a": "You squeeze a spring until the lever passes its centre. Then the spring flips the contacts together in a blink, too fast for a spark to burn them."
+  },
+  {
+   "slug": "escalator",
+   "order": 18,
+   "name": "Escalator steps",
+   "q": "Why do escalator steps *go flat* at the top?",
+   "a": "Each step rides on two pairs of wheels on two tracks. On the slope the tracks keep every step level. At the landing they come together and the steps form a flat floor."
+  },
+  {
+   "slug": "valve",
+   "order": 19,
+   "name": "Tire valve",
+   "q": "Why doesn't air *leak out* of your tire valve?",
+   "a": "A spring holds a rubber seal on its seat, and the air in the tyre pushes it the same way. More pressure means a tighter seal. Pressing the pin lifts it."
+  },
+  {
+   "slug": "stapler",
+   "order": 20,
+   "name": "Stapler",
+   "q": "How does a staple *fold itself*?",
+   "a": "A blade pushes one staple through the paper onto a plate with two curved grooves. The staple never folds itself. The grooves fold it."
+  },
+  {
+   "slug": "pencil",
+   "order": 21,
+   "name": "Mechanical pencil",
+   "q": "How does a pencil feed its lead *one click* at a time?",
+   "a": "Three jaws grip the lead. A click slides jaws and lead forward together, a stop opens the jaws, and they slide back alone to grab the lead further up."
+  },
+  {
+   "slug": "can",
+   "order": 22,
+   "name": "Can tab",
+   "q": "How does a tiny tab open a *pressurized* can?",
+   "a": "First the tab pivots on its nose and cracks a vent to let the gas out. Then the rivet becomes the pivot and the nose pushes the lid in. One tab, two levers."
+  },
+  {
+   "slug": "nozzle",
+   "order": 23,
+   "name": "Gas pump nozzle",
+   "q": "How does a gas pump know your tank is *full*?",
+   "a": "Fuel rushing through the handle sucks air in through a small hole at the tip. When the fuel covers the hole, the suction jumps and unlatches the trigger."
+  },
+  {
+   "slug": "trainwheels",
+   "order": 24,
+   "name": "Train wheels",
+   "q": "How does a train *steer* around a curve?",
+   "a": "Each wheel is a cone on a solid axle. In a curve the pair shifts outward, so the outer wheel rolls on its wide part and travels farther. The train steers itself."
+  },
+  {
+   "slug": "lighter",
+   "order": 25,
+   "name": "Lighter",
+   "q": "Where does a lighter's *spark* come from?",
+   "a": "A spring presses a soft metal rod against a steel wheel. Spinning the wheel shaves off specks that burn white hot, just as a lever opens the gas."
+  },
+  {
+   "slug": "ballpoint",
+   "order": 26,
+   "name": "Ballpoint pen tip",
+   "q": "Why does a pen *stop working* when you drop it?",
+   "a": "A tiny ball sits in a socket and rolls ink from behind onto the page. Land the pen on its tip and the socket dents. The ball jams, so no ink."
+  },
+  {
+   "slug": "coincheck",
+   "order": 27,
+   "name": "Vending machine coin check",
+   "q": "How does a vending machine catch a *fake coin*?",
+   "a": "A gauge checks the size and a magnet holds steel slugs. The same magnet slows real coins by an amount that depends on the metal, and only the right speed reaches the cash box."
+  },
+  {
+   "slug": "sawbrake",
+   "order": 28,
+   "name": "Skin-sensing saw brake",
+   "q": "How does a saw know it touched a *finger*?",
+   "a": "The blade carries a small electric signal that skin changes and wood does not. Within a few thousandths of a second a spring fires a metal block into the teeth."
+  },
+  {
+   "slug": "sewing",
+   "order": 29,
+   "name": "Sewing machine",
+   "q": "How does a sewing machine tie a stitch from *one side*?",
+   "a": "The needle's eye is at its tip, so it pushes a loop of thread under the cloth. A hook carries that loop around a second spool below, and the two threads lock."
+  },
+  {
+   "slug": "points",
+   "order": 30,
+   "name": "Railway switch",
+   "q": "How does a train *change tracks*?",
+   "a": "Two tapered blades, tied together, slide sideways. One closes against its rail and guides the wheel by its flange. The other opens a gap for the opposite wheel."
+  },
+  {
+   "slug": "teapot",
+   "order": 31,
+   "name": "Two-chamber teapot",
+   "q": "How does one teapot pour *two different drinks*?",
+   "a": "A wall splits the pot in two, and each side has its own air hole. Liquid can only leave if air gets in behind it, so plugging a hole holds that drink back."
+  },
+  {
+   "slug": "glowstick",
+   "order": 32,
+   "name": "Glow stick",
+   "q": "What *snaps* when you crack a glow stick?",
+   "a": "A thin glass vial inside the tube. When it breaks, two liquids mix and react. The reaction hands its energy to a dye, and the dye gives it back as light."
+  },
+  {
+   "slug": "starter",
+   "order": 33,
+   "name": "Starter motor",
+   "q": "What happens when you *turn the key*?",
+   "a": "An electromagnet pulls a lever that slides a small gear into the teeth of the flywheel. Only then does the motor get full power. Let go, and a spring pulls the gear back."
+  },
+  {
+   "slug": "greedycup",
+   "order": 34,
+   "name": "Self-emptying cup",
+   "q": "Why does this cup *empty itself* if you overfill it?",
+   "a": "The centre column hides a bent tube. Fill past the bend and the tube becomes a siphon that drains the whole cup through the base."
+  },
+  {
+   "slug": "engine",
+   "order": 35,
+   "name": "Four-stroke engine",
+   "q": "What happens *inside an engine*?",
+   "a": "Four strokes, over and over. The piston sucks in air and fuel, squeezes them, a spark sets them off and the blast drives it down, then it pushes the exhaust out."
+  }
+ ],
+ "lens": [
+  {
+   "slug": "lock",
+   "label": "Door lock"
+  },
+  {
+   "slug": "combo",
+   "label": "Combination lock"
+  },
+  {
+   "slug": "kettle",
+   "label": "Kettle"
+  },
+  {
+   "slug": "stapler",
+   "label": "Stapler"
+  }
+ ]
+}
