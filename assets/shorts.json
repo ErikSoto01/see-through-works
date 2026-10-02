@@ -36,13 +36,6 @@
    "a": "The latch bolt has one slanted side. The strike plate pushes on the slant, the bolt slides in, and a spring snaps it back out once it reaches the hole."
   },
   {
-   "slug": "windows",
-   "order": 6,
-   "name": "Airplane windows",
-   "q": "Why are airplane windows *round*?",
-   "a": "Stress in the cabin's skin flows around each window. At a sharp corner it piles up and a crack can start, so every window, door and hatch is rounded."
-  },
-  {
    "slug": "bike",
    "order": 7,
    "name": "Bike freehub",
@@ -244,6 +237,13 @@
    "name": "Four-stroke engine",
    "q": "What happens *inside an engine*?",
    "a": "Four strokes, over and over. The piston sucks in air and fuel, squeezes them, a spark sets them off and the blast drives it down, then it pushes the exhaust out."
+  },
+  {
+   "slug": "windows2",
+   "order": 36,
+   "name": "Airplane windows",
+   "q": "Why are airplane windows *rounded*?",
+   "a": "Stress in the cabin's skin flows around each window. At a sharp corner it piles up and a crack can start, so every window, door and hatch is rounded."
   }
  ],
  "lens": [
