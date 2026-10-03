@@ -10,7 +10,10 @@
 <meta property="og:title" content="See Through Works">
 <meta property="og:description" content="Everyday things, seen from the inside.">
 <meta property="og:image" content="https://eriksoto01.github.io/see-through-works/assets/og.png">
+<meta property="og:url" content="https://eriksoto01.github.io/see-through-works/">
+<meta property="og:image:alt" content="See Through Works: an everyday object shown solid, with a round lens revealing the mechanism inside.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://eriksoto01.github.io/see-through-works/assets/og.png">
 <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/quicksand.woff2" as="font" type="font/woff2" crossorigin>
@@ -161,6 +164,11 @@ dialog::backdrop{background:rgba(5,8,16,.88);backdrop-filter:blur(6px)}
 .about h3{font-size:22px;margin-bottom:8px}
 .about p{margin:0;color:#d0d8ee}
 .follow{margin-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;background:linear-gradient(120deg,#1a2650,#152243);border-radius:var(--r);box-shadow:0 0 0 1px var(--line);padding:22px 24px}
+.fbtns{display:flex;flex-wrap:wrap;gap:10px}
+.contact{margin:18px 0 0;color:#d0d8ee}
+.btn.sm{padding:11px 18px;font-size:15px}
+@media(max-width:820px){.btn.sm,.fbtns .btn{min-height:44px;justify-content:center}.brand{min-height:44px}.opts button{min-height:44px}.contact a{display:inline-flex;align-items:center;min-height:44px}.top .wrap{gap:8px}.btn.sm{padding:11px 14px}}
+@media(max-width:480px){.wm{display:none}.brand{min-width:44px}}
 .follow p{margin:0;flex:1;min-width:240px;font:700 20px/1.3 var(--head)}
 footer{border-top:1px solid var(--line);padding:30px 0 46px;color:var(--dim);font-size:14.5px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justify-content:space-between}
@@ -172,7 +180,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justif
 <header class="top"><div class="wrap">
   <a class="brand" href="#top" aria-label="See Through Works, home"><img src="assets/mark.svg" width="34" height="34" alt=""><span class="wm"><i>See Through</i> <b>Works</b></span></a>
   <nav aria-label="Sections"><a href="#inside">Look inside</a><a href="#myth">Myth or fact</a><a href="#teasers">Brain teasers</a><a href="#facts">Did you know</a><a href="#about">About</a></nav>
-  <a class="btn" id="follow" href="#" hidden style="padding:11px 18px;font-size:15px">Follow</a>
+  <a class="btn ghost sm" id="ig" href="#" hidden target="_blank" rel="noopener" aria-label="See Through Works on Instagram (opens in a new tab)">Instagram</a>
+  <a class="btn sm" id="follow" href="#" hidden aria-label="Follow See Through Works on Facebook (opens in a new tab)">Follow</a>
 </div></header>
 
 <main id="top">
@@ -224,10 +233,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justif
   <div class="sec-head"><div><span class="kicker">About</span><h2>We like the moment a mystery <b>turns into a mechanism.</b></h2></div></div>
   <div class="about">
     <div><h3>Start with the question</h3><p>Everything here answers something you have half wondered about: why only your key fits, how a seatbelt knows, what actually snaps inside a glow stick.</p></div>
-    <div><h3>Show the real thing</h3><p>We build each object in 3D from how it truly works: what pushes what, in which direction, and what stops it. If a picture bends reality to make a part visible, we say so.</p></div>
+    <div><h3>Show the real thing</h3><p>Every picture shows how the object truly works: what pushes what, in which direction, and what stops it. If a picture bends reality to make a part visible, we say so.</p></div>
     <div><h3>Keep it short</h3><p>No jargon, and a last line you can repeat to someone else. If you can explain it at dinner tonight, we did our job.</p></div>
   </div>
-  <div class="follow" id="followbox" hidden><p>New explainers and brain teasers every week on our Facebook Page.</p><a class="btn" id="follow2" href="#" target="_blank" rel="noopener">Follow See Through Works</a></div>
+  <div class="follow" id="followbox" hidden><p>New explainers and brain teasers every week on our Facebook Page.</p><span class="fbtns"><a class="btn" id="follow2" href="#" target="_blank" rel="noopener" aria-label="Follow See Through Works on Facebook (opens in a new tab)">Follow See Through Works</a><a class="btn ghost" id="ig2" href="#" hidden target="_blank" rel="noopener" aria-label="Follow See Through Works on Instagram (opens in a new tab)">Instagram</a></span></div>
+  <p class="contact" id="contact" hidden>Questions or ideas? <a id="mail" href="#">Email us</a></p>
 </div></section>
 </main>
 
@@ -244,6 +254,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justif
 /* Things you may want to edit ------------------------------------------------------------------------------------ */
 const SITE = {
   facebook: 'https://www.facebook.com/profile.php?id=61594801359688',            // the Page's address, e.g. 'https://www.facebook.com/seethroughworks'. Empty hides the Follow buttons.
+  instagram: 'https://www.instagram.com/seethroughworks/',
   firstRows: 12,           // how many cards show before "Show all"
 };
 /* The catalogue is written here by tools/build.js. Do not edit by hand. */
@@ -253,6 +264,9 @@ const $ = s => document.querySelector(s), md = s => s.replace(/\*(.+?)\*/g, '<b>
 const CALM = matchMedia('(prefers-reduced-motion: reduce)').matches;
 $('#n').textContent = DATA.shorts.length || 35;
 if (SITE.facebook) { for (const id of ['#follow', '#follow2']) $(id).href = SITE.facebook; $('#follow').hidden = false; $('#follow').target = '_blank'; $('#follow').rel = 'noopener'; $('#followbox').hidden = false; }
+if (SITE.instagram) { for (const id of ['#ig', '#ig2']) { $(id).href = SITE.instagram; $(id).hidden = false; } }
+/* contact address built from parts so it is not plain text in the HTML */
+{ const u = ['erik.soto.ayala', 'seethroughworks'].join('+'), h = ['gmail', 'com'].join('.'); $('#mail').href = 'mailto:' + u + '@' + h; $('#contact').hidden = false; }
 
 /* turning gears: every <g class="gear"> in a drawing is turned about its own centre, each the opposite way to the one before,
    at a speed set by its tooth count, so a meshing chain stays in mesh */
