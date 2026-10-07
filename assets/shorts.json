@@ -244,6 +244,48 @@
    "name": "Airplane windows",
    "q": "Why are airplane windows *rounded*?",
    "a": "Stress in the cabin's skin flows around each window. At a sharp corner it piles up and a crack can start, so every window, door and hatch is rounded."
+  },
+  {
+   "slug": "coupler",
+   "order": 37,
+   "name": "Train coupler",
+   "q": "How do train cars *lock together* on their own?",
+   "a": "Each car ends in a hinged steel knuckle. When two cars bump, the knuckles swing shut around each other and a heavy lock drops behind each one, so it cannot swing open again."
+  },
+  {
+   "slug": "differential",
+   "order": 38,
+   "name": "Car differential",
+   "q": "Why can your car's wheels spin at *different speeds*?",
+   "a": "The axle is split in two, and small gears in a spinning cage join the halves. Driving straight they ride along; in a turn they roll, so one wheel speeds up exactly as much as the other slows."
+  },
+  {
+   "slug": "stylus",
+   "order": 39,
+   "name": "Record player needle",
+   "q": "What does a record's needle *actually read*?",
+   "a": "A record has one long groove whose walls waver in the shape of the sound. A tiny diamond follows the waver and shakes a magnet beside a coil, which turns the motion into an electric signal."
+  },
+  {
+   "slug": "ratchet",
+   "order": 40,
+   "name": "Ratchet wrench",
+   "q": "Why does a ratchet only turn *one way*?",
+   "a": "Inside the head, a spring-loaded catch presses against a toothed wheel. Pulling one way, the catch jams on a tooth and turns the bolt; swinging back, it rides up each slope and clicks over."
+  },
+  {
+   "slug": "torquewrench",
+   "order": 41,
+   "name": "Torque wrench",
+   "q": "How does a torque wrench know when to *click*?",
+   "a": "A spring in the handle presses a small block square into a notch. When your pull reaches the set force the block tips over with a click. It only warns you: the wrench still turns the nut."
+  },
+  {
+   "slug": "doorcloser",
+   "order": 42,
+   "name": "Door closer",
+   "q": "Why doesn't a door closer *slam* the door?",
+   "a": "Opening the door pushes a piston against a spring. The spring pushes back, but the oil ahead of the piston can only escape through one tiny hole, so the door closes slowly."
   }
  ],
  "lens": [

@@ -14,7 +14,8 @@ const args = process.argv.slice(2), dataOnly = args.includes('--data-only'), onl
 const XRAY = { lock: 34, jack: 34, speaker: 22, seatbelt: 46, door: 46, windows: 70, bike: 34, elevator: 46, combo: 46, clock: 58, zipper: 46, pen: 46,
   kettle: 58, sprinkler: 34, tape: 58, musicbox: 46, switch: 46, escalator: 34, valve: 34, stapler: 70, pencil: 58, can: 46, nozzle: 58,
   trainwheels: 34, lighter: 70, ballpoint: 46, coincheck: 46, sawbrake: 58, sewing: 58,
-  points: 66, teapot: 61, glowstick: 82, starter: 69, greedycup: 72, engine: 85, windows2: 70 };
+  points: 66, teapot: 61, glowstick: 82, starter: 69, greedycup: 72, engine: 85, windows2: 70,
+  coupler: 53, differential: 52, stylus: 47, ratchet: 45, torquewrench: 36, doorcloser: 35 };
 const ANSWERS = JSON.parse(fs.readFileSync(path.join(__dirname, 'answers.json')));
 const SKIP = fs.existsSync(path.join(STUDIO, 'FINAL', 'windows2-reel-9x16.mp4')) ? ['windows'] : ['windows2'];   // one card for the airplane window: the corrected Short once it exists
 // hero lens: [slug, label, time while still solid (its camera is used for both pictures), time just after it has gone see-through]
