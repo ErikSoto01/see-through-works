@@ -34,5 +34,11 @@
  "glowstick": "A thin glass vial inside the tube. When it breaks, two liquids mix and react. The reaction hands its energy to a dye, and the dye gives it back as light.",
  "starter": "An electromagnet pulls a lever that slides a small gear into the teeth of the flywheel. Only then does the motor get full power. Let go, and a spring pulls the gear back.",
  "greedycup": "The centre column hides a bent tube. Fill past the bend and the tube becomes a siphon that drains the whole cup through the base.",
- "engine": "Four strokes, over and over. The piston sucks in air and fuel, squeezes them, a spark sets them off and the blast drives it down, then it pushes the exhaust out."
+ "engine": "Four strokes, over and over. The piston sucks in air and fuel, squeezes them, a spark sets them off and the blast drives it down, then it pushes the exhaust out.",
+ "coupler": "Each car ends in a hinged steel knuckle. When two cars bump, the knuckles swing shut around each other and a heavy lock drops behind each one, so it cannot swing open again.",
+ "differential": "The axle is split in two, and small gears in a spinning cage join the halves. Driving straight they ride along; in a turn they roll, so one wheel speeds up exactly as much as the other slows.",
+ "stylus": "A record has one long groove whose walls waver in the shape of the sound. A tiny diamond follows the waver and shakes a magnet beside a coil, which turns the motion into an electric signal.",
+ "ratchet": "Inside the head, a spring-loaded catch presses against a toothed wheel. Pulling one way, the catch jams on a tooth and turns the bolt; swinging back, it rides up each slope and clicks over.",
+ "torquewrench": "A spring in the handle presses a small block square into a notch. When your pull reaches the set force the block tips over with a click. It only warns you: the wrench still turns the nut.",
+ "doorcloser": "Opening the door pushes a piston against a spring. The spring pushes back, but the oil ahead of the piston can only escape through one tiny hole, so the door closes slowly."
 }
